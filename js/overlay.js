@@ -1,10 +1,22 @@
 $(document).ready(function() {
 	$(".overlay").hide();
-	$("#closeOverlay").hide();
 	$("#operators").mouseenter(function() {
-		$("#operatorsOverlay, #operatorsOverlay.closeOverlay").show("slow");
+		$("#operatorsOverlay").show("slow");
 	});
-	$(".closeOverlay").click(function(){
-		$(".overlay, .closeOverlay").hide("slow");
+	
+	$("#mros").mouseenter(function(){
+		$("#mrosOverlay").show("slow");
+	});
+	
+	$("#lessors").mouseenter(function(){
+		$("#lessorsOverlay").show("slow");
+	});
+	
+	$("#oems").mouseenter(function(){
+		$("#oemsOverlay").show("slow");
+	});
+	
+	$(".overlay").click(function(){
+		$(this).hide("slow");
 	});
 }); 
