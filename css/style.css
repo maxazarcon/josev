@@ -7,14 +7,14 @@ body {
 .row{
 	margin: 0 -30px;
 }
-.topRow {
+.item {
 	margin-bottom: 25px;
 }
 .overlay {
 	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 25px;
 	left: 0;
 	text-align: center;
 	padding: 30px;
