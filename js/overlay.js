@@ -1,3 +1,5 @@
-$("#operators").mouseover(function() {
-	alert("Operator");
-});
+$(function() {
+	$("#operators").click(function() {
+		alert("Operator");
+	});
+}); 
