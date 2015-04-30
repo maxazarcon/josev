@@ -6,7 +6,7 @@ $(document).ready(function() {
 	$('#operators').mouseenter(function() {
 		timeout = setTimeout(function() {
 			$("#operatorsOverlay").show("slow");
-		}, 500);
+		}, 1000);
 	}).mouseleave(function() {
 		clearTimeout(timeout);
 	});
@@ -14,7 +14,7 @@ $(document).ready(function() {
 	$('#mros').mouseenter(function() {
 		timeout = setTimeout(function() {
 			$("#mrosOverlay").show("slow");
-		}, 500);
+		}, 1000);
 	}).mouseleave(function() {
 		clearTimeout(timeout);
 	});
@@ -22,7 +22,7 @@ $(document).ready(function() {
 	$('#lessors').mouseenter(function() {
 		timeout = setTimeout(function() {
 			$("#lessorsOverlay").show("slow");
-		}, 500);
+		}, 1000);
 	}).mouseleave(function() {
 		clearTimeout(timeout);
 	});
@@ -30,7 +30,7 @@ $(document).ready(function() {
 	$('#oems').mouseenter(function() {
 		timeout = setTimeout(function() {
 			$("#oemsOverlay").show("slow");
-		}, 500);
+		}, 1000);
 	}).mouseleave(function() {
 		clearTimeout(timeout);
 	});
