@@ -1,21 +1,17 @@
-.main{
-	height: 100%;
+/*!
+ * Start Bootstrap - 2 Col Portfolio HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
-#itemContainer {
-	height: 100%;
-	width: 100%;
-	margin: 0 auto;
+
+.portfolio-item {
+    margin-bottom: 25px;
 }
-.itemRow .item {
-	display: inline;
-}
-.itemRow {
-	height: 40%;
-	width: 100%;
-}
-.item {
-	height: 100%;
-	width: 45%;
-	background-color: rgba(0,0,0,.1);
-	padding-top: 20px;
+
+footer {
+    margin: 50px 0;
 }
