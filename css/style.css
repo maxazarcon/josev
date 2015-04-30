@@ -23,6 +23,15 @@ body {
 	background-color: rgba(100,100,100,.9);
 	z-index: 5;
 }
+#closeOverlay {
+	position: absolute;
+	top: 10;
+	left: 10;
+}
+#closeOverlay img{
+	height: 15px;
+	width: 15px;
+}
 footer {
     margin: 50px 0;
 }
