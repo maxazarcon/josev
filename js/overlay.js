@@ -1,12 +1,14 @@
 $(document).ready(function() {
-	
+
 	$(".overlay").hide();
 	
+	var delay = 750;
 	var timeout;
+	
 	$('#operators').mouseenter(function() {
 		timeout = setTimeout(function() {
 			$("#operatorsOverlay").show("slow");
-		}, 1000);
+		}, delay);
 	}).mouseleave(function() {
 		clearTimeout(timeout);
 	});
@@ -14,15 +16,15 @@ $(document).ready(function() {
 	$('#mros').mouseenter(function() {
 		timeout = setTimeout(function() {
 			$("#mrosOverlay").show("slow");
-		}, 1000);
+		}, delay);
 	}).mouseleave(function() {
 		clearTimeout(timeout);
 	});
-	
+
 	$('#lessors').mouseenter(function() {
 		timeout = setTimeout(function() {
 			$("#lessorsOverlay").show("slow");
-		}, 1000);
+		}, delay);
 	}).mouseleave(function() {
 		clearTimeout(timeout);
 	});
@@ -30,7 +32,7 @@ $(document).ready(function() {
 	$('#oems').mouseenter(function() {
 		timeout = setTimeout(function() {
 			$("#oemsOverlay").show("slow");
-		}, 1000);
+		}, delay);
 	}).mouseleave(function() {
 		clearTimeout(timeout);
 	});
@@ -38,12 +40,4 @@ $(document).ready(function() {
 	$(".overlay").click(function() {
 		$(this).hide("slow");
 	});
-});
-var myTimeout;
-$('#mylink').mouseenter(function() {
-	myTimeout = setTimeout(function() {
-		//do stuff
-	}, 500);
-}).mouseleave(function() {
-	clearTimeout(myTimeout);
 });
