@@ -1,6 +1,10 @@
 .main{
 	height: 100%;
 }
+#itemContainer {
+	height: 100%;
+	width: 100%;
+}
 .itemRow .item {
 	display: inline;
 }
