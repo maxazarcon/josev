@@ -1,23 +1,11 @@
 .main{
 	height: 100%;
 }
-#segmentContainer {
-	width: 80%;
-	height: 80%;
-}
-.segmentRow {
+.itemRow {
 	height: 40%;
 	width: 100%;
 }
-.segment {
+.item {
 	background-color: rgba(0,0,0,.1);
 	padding-top: 20px;
-}
-.segmentOverlay {
-	background-color: rgba(0,0,0,.5);
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
 }
