@@ -1,5 +1,7 @@
 $(document).ready(function() {
-
+	
+	$(".overlay").hide();
+	
 	var timeout;
 	$('#operators').mouseenter(function() {
 		timeout = setTimeout(function() {
