@@ -1,5 +1,5 @@
 $(function() {
 	$("#operators").mouseenter(function() {
-		//work here
+		$("#operatorsOverlay").show("slow");
 	});
 }); 
