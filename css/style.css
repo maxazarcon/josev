@@ -1,6 +1,9 @@
 .main{
 	height: 100%;
 }
+.itemRow .item {
+	display: inline;
+}
 .itemRow {
 	height: 40%;
 	width: 100%;
