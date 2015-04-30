@@ -1,5 +1,5 @@
-$(function(){
-	$("#operators").mouseover(function(){
+$(document).ready(function(){
+	$(".item").mouseover(function(){
 		alert("Operator");
 	});
 });
