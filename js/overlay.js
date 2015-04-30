@@ -1,5 +1,3 @@
-$(document).ready(function(){
-	$(".item").click(function(){
-		alert("Operator");
-	});
+$(".item").click(function() {
+	alert("Operator");
 });
