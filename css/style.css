@@ -1,6 +1,9 @@
 body {
     padding-top: 20px;
 }
+#wrapper {
+	position: relative;
+}
 .row{
 	margin: 0 -30px;
 }
@@ -8,12 +11,16 @@ body {
 	margin-bottom: 25px;
 }
 .overlay {
-	position: relative;
+	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: rgba(0,0,0,.1);
+	text-align: center;
+	padding: 30px;
+	font-size: 1.4em;
+	color: white;
+	background-color: rgba(100,100,100,.9);
 	z-index: 5;
 }
 footer {
