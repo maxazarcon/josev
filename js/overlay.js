@@ -1,26 +1,47 @@
 $(document).ready(function() {
-	$(".overlay").hide();
-	$("#operators").mouseenter(function() {
-		$("#operatorsOverlay").delay(2000).show("slow");
-		$("#mrosOverlay, #lessorsOverlay, #oemsOverlay").hide();
+
+	var timeout;
+	$('#operators').mouseenter(function() {
+		timeout = setTimeout(function() {
+			$("#operatorsOverlay").show("slow");
+		}, 500);
+	}).mouseleave(function() {
+		clearTimeout(timeout);
+	});
+
+	$('#mros').mouseenter(function() {
+		timeout = setTimeout(function() {
+			$("#mrosOverlay").show("slow");
+		}, 500);
+	}).mouseleave(function() {
+		clearTimeout(timeout);
 	});
 	
-	$("#mros").mouseenter(function(){
-		$("#mrosOverlay").delay(2000).show("slow");
-		("#operatorsOverlay, #lessorsOverlay, #oemsOverlay").hide();
+	$('#lessors').mouseenter(function() {
+		timeout = setTimeout(function() {
+			$("#lessorsOverlay").show("slow");
+		}, 500);
+	}).mouseleave(function() {
+		clearTimeout(timeout);
 	});
-	
-	$("#lessors").mouseenter(function(){
-		$("#lessorsOverlay").delay(2000).show("slow");
-		$("#operatorsOverlay, #mrosOverlay, #oemsOverlay").hide();
+
+	$('#oems').mouseenter(function() {
+		timeout = setTimeout(function() {
+			$("#oemsOverlay").show("slow");
+		}, 500);
+	}).mouseleave(function() {
+		clearTimeout(timeout);
 	});
-	
-	$("#oems").mouseenter(function(){
-		$("#oemsOverlay").delay(2000).show("slow");
-		$("#operatorsOverlay, #mrosOverlay, #lessorsOverlay").hide();
-	});
-	
-	$(".overlay").click(function(){
+
+	$(".overlay").click(function() {
 		$(this).hide("slow");
 	});
-}); 
+});
+var myTimeout;
+$('#mylink').mouseenter(function() {
+	myTimeout = setTimeout(function() {
+		//do stuff
+	}, 500);
+}).mouseleave(function() {
+	clearTimeout(myTimeout);
+});
