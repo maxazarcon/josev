@@ -1,3 +1,3 @@
-$(".item").click(function() {
+$("#operators").mouseover(function() {
 	alert("Operator");
 });
