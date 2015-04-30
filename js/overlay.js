@@ -1,5 +1,5 @@
 $(function() {
 	$("#operators").mouseenter(function() {
-		alert("Operator");
+		$('#wrapper').css('background-color', 'black');
 	});
 }); 
